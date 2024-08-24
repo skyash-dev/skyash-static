@@ -6,14 +6,13 @@
     <description>Recent content on skyash</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jan 2024 07:07:07 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
+      <title></title>
       <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 14 Jan 2024 07:07:07 +0100</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.&#xA;Visit the Hugo website!</description>
+      <description>Brain Surgery, Stem Cells and Neurohacking Created Date: November 17, 2023 3:32 PM&#xA;author :- @skyash&#xA;Brain Surgery. The area of surgeries etc. never excited me but slowly learning about the process and other thing, fascinated me like never before. My interest in neuroscience and brain blew up after knowing the terms like neuroplasticity, autism etc.&#xA;So in this blog I am going to share all the information that I gathered and learnt because of my sudden interest in this area.</description>
     </item>
   </channel>
 </rss>
