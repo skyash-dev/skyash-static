@@ -1,3 +1,39 @@
 {{ define "main" }}
-<div class="list">Homepage</div>
+<section>
+  {{ range .Paginator.Pages }}
+    <article>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Summary }}</p>
+    </article>
+  {{ end }}
+
+  <!-- Pagination -->
+  {{ with .Paginator }}
+    {{ if gt .TotalPages 1 }}
+    <nav>
+      {{ with .First }}
+        <a href="{{ .URL }}">First</a>
+      {{ end }}
+      {{ with .Prev }}
+        <a href="{{ .URL }}">Previous</a>
+      {{ end }}
+
+      {{ range .Pagers }}
+        {{ if eq . $.Paginator }}
+          <span class="active">{{ .PageNumber }}</span>
+        {{ else }}
+          <a href="{{ .URL }}">{{ .PageNumber }}</a>
+        {{ end }}
+      {{ end }}
+
+      {{ with .Next }}
+        <a href="{{ .URL }}">Next</a>
+      {{ end }}
+      {{ with .Last }}
+        <a href="{{ .URL }}">Last</a>
+      {{ end }}
+    </nav>
+    {{ end }}
+  {{ end }}
+</section>
 {{ end }}

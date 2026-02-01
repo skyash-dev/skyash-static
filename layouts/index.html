@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="main">
+  <div class="hero">
+    <div class="hero-text">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+{{ partial "blogs-list.html" . }}
+{{ end }}

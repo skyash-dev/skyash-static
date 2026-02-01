@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="projects-work">
+  <div class="projects-grid">
+    {{ range .Site.Data.projects }}
+    <div class="project-item">
+      <div class="project-content">
+        <div class="project-info">
+          <a href="{{ .visit | default "https://github.com/skyash-dev" }}"
+            class="project-title">
+            {{ .title }}
+          </a>
+
+          <div class="project-description-container">
+            <div class="project-description">
+              {{ .description }}
+            </div>
+
+            <a href="{{ .image }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-image-link">
+              <img src="{{ .image }}"
+                alt="{{ .title }}"
+                class="project-image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

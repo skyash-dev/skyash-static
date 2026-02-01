@@ -1,3 +1,49 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'skyash'
+baseURL = "https://skyash.me/"
+languageCode = "en-us"
+title = "skyash"
+
+# Output formats
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+# Markup configuration
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Menu configuration
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Craft"
+    url = "/craft"
+    weight = 2
+  [[menu.social]]
+    name = "X"
+    url = "https://www.x.com/_skyash/"
+    weight = 1
+  [[menu.social]]
+    name = "GitHub"
+    url = "https://www.github.com/skyash-dev/"
+    weight = 2
+  [[menu.social]]
+    name = "YouTube"
+    url = "https://www.youtube.com/@skyash-yt/"
+    weight = 3
+
+# Parameters
+[params]
+  googleAnalyticsId = ""
+  notionDatabaseId = ""
+  notionToken = ""
+  author = "Yash"
+  description = "Building useful apps that solves real problems"

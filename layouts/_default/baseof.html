@@ -1,13 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      {{partial "navbar" .}} {{block "main" .}} {{end}} {{partial "footer" .}}
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  {{ $styles := resources.Get "css/globals.css" }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+  <!-- Google Analytics -->
+  {{ if .Site.Params.googleAnalyticsId }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalyticsId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ .Site.Params.googleAnalyticsId }}');
+  </script>
+  {{ end }}
+</head>
+<body class="page-body">
+  <div class="page-container">
+    {{ partial "navbar.html" . }}
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+
+  <footer class="page-footer">
+    <a href="https://skyash.me/" class="underline text-primary">v3</a>
+  </footer>
+
+  <!-- Dark mode toggle script -->
+  <script src="{{ (resources.Get "js/theme-toggle.js").RelPermalink }}"></script>
+  <script src="{{ (resources.Get "js/svg-turb.js").RelPermalink }}"></script>
+</body>
 </html>

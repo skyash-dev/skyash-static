@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="blogs-list">
+  {{ $posts := where .Site.RegularPages "Section" "blog" }}
+  {{ range $posts }}
+  <div>
+    <a href="{{ .Permalink }}" class="blog-item-link">
+      <span class="blog-item-title">
+        {{ .Params.icon }}{{ if .Params.icon }}&nbsp;{{ end }}{{ .Title }}
+      </span>
+      <span class="blog-item-meta">
+        {{ .Params.category }} ~ {{ .Date.Year }}
+      </span>
+    </a>
+    <hr class="blog-item-divider" />
+  </div>
+  {{ end }}
+</div>
+{{ end }}

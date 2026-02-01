@@ -1,0 +1,87 @@
+- year: "2021"
+  title: "Wheel Roll!"
+  description: "Exploring villages in summer, saw kids playing with wheel and thought to turn it into a game. Developed it using UnityEngine."
+  image: "/images/WheelRoll.png"
+  tags: ["C#", "Unity", "JS"]
+  visit: "https://skyash.itch.io/wheel-roll"
+  id: 2
+
+- year: "2022"
+  title: "Dark Warlocks"
+  description: "Using Vanilla HTML, CSS and JS developed landing page for client from Dark Warlocks"
+  image: "/images/DarkWarlocks.png"
+  tags: ["HTML", "CSS", "JS"]
+  visit: "https://darkwarlocks.com/"
+  id: 3
+
+- year: "2023"
+  title: "roadmapAI"
+  description: "Using React with NextJS developed an app. The App is called roadmapAI and it is a simple roadmap generating app that allows users to generate roadmaps using AI."
+  image: "/images/roadmapAI.png"
+  tags: ["ReactJS", "NextJS", "TailwindCSS"]
+  visit: "https://roadmapAI.vercel.app"
+  id: 4
+
+- year: "2023"
+  title: "tabX"
+  description: "Built a software product for the efficient tab management. It helps users to be super productive and efficient."
+  image: "/images/tabX.png"
+  tags: ["ReactJS", "NextJS", "TailwindCSS"]
+  visit: "https://tabx.vercel.app/"
+  id: 5
+
+- year: "2024"
+  title: "dots"
+  description: "You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future"
+  image: "/images/dots.png"
+  tags: ["ReactJS", "react-force-graph"]
+  visit: "https://dots-connect.vercel.app"
+  id: 6
+
+- year: "2024"
+  title: "tweakCSS"
+  description: "tweakCSS is a simple CDN that allows frontends devs to tweak CSS and color palettes from a simple dashboard."
+  image: "/images/tweakCSS.png"
+  tags: ["ExpressJS", "NextJS", "TailwindCSS"]
+  visit: "https://github.com/skyash-dev/tweakCSS"
+  id: 7
+
+- year: "2024"
+  title: "lofily"
+  description: "lofily is a desktop app which lets you listen lofi music replacing your wallpaper with cool chill backgrounds, pomodoro timer and more."
+  image: "/images/lofily.png"
+  tags: ["Tauri", "Rust", "ReactJS"]
+  visit: "https://github.com/skyash-dev/lofily"
+  id: 8
+
+- year: "2024"
+  title: "copo"
+  description: "everyone using this pomodoro site/app is on the same 25/5 minute intervals. During the 5-minute breaks, a global chat lets everyone interact with each other."
+  image: "/images/copo.png"
+  tags: ["NextJS", "Socket.io", "ExpressJS"]
+  visit: "https://copo-skyash.vercel.app/"
+  id: 9
+
+- year: "2024"
+  title: "notion-wrapped"
+  description: "notion-wrapped 2024 is just like spotify wrapped but for notion."
+  image: "/images/notion-wrapped.png"
+  tags: ["NextJS", "NotionAPI", "Framer Motion"]
+  visit: "https://www.notionwrapped.tech/"
+  id: 10
+
+- year: "2025"
+  title: "postman-tui"
+  description: "a simple API client (postman like) in your terminal, install it with `cargo install postman-tui`"
+  image: "/images/postman-tui.png"
+  tags: ["Rust", "Ratatui", "reqwest"]
+  visit: "https://crates.io/crates/postman-tui"
+  id: 11
+
+- year: "2025"
+  title: "snap"
+  description: "a privacy-first tool for capturing and organizing anything you paste. Snap lets you instantly save text, links, or ideas."
+  image: "/images/snap.jpeg"
+  tags: ["NextJS", "Langchain", "RAG"]
+  visit: "https://snap.skyash.me/"
+  id: 12
